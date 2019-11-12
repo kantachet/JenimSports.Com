@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start -p 2900"
+    "start": "next start -p 2900",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@moltin/sdk": "^3.19.0",
