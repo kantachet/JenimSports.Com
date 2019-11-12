@@ -1,0 +1,19 @@
+{
+  "name": "jenimspoirts.com",
+  "description": "store powered by jenim",
+  "repository": "https://github.com/moltin/nextjs-demo-store",
+  "logo": "https://www.jenimsports.com/static/favicons/apple-touch-icon.png",
+  "keywords": ["shirt", "jenim", "nct", "fashion", "sport"],
+  "success_url": "/",
+  "env": {
+    "MOLTIN_CLIENT_ID": {
+      "description":
+        "The client_is is the unique ID associated with your store. You can find this inside your moltin Dashboard.",
+      "value": "EdP3Gi1agyUF3yFS7Ngm8iyodLgbSR3wY4ceoJl0d2"
+    },
+    "STRIPE_KEY": {
+      "description":
+        "Your Stripe publishable key. You will need the secret key added to the Moltin Dashboard for Stripe checkout to work correctly."
+    }
+  }
+}
