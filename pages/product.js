@@ -1,8 +1,6 @@
 import Layout from '../components/Layout';
 import ProductSummary from '../components/ProductSummary';
 import ProductAttributes from '../components/ProductAttributes';
-
-//import { getProductById } from '../lib/moltin'
 import { getProductById } from '../lib/jenim';
 
 const ProductPage = ({ product }) => (
@@ -10,7 +8,7 @@ const ProductPage = ({ product }) => (
 		<ProductSummary {...product} />
 		<ProductAttributes {...product} />
 	</Layout>
-);
+)
 
 ProductPage.getInitialProps = async ({ query: { id } }) => {
 	const {

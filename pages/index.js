@@ -1,27 +1,24 @@
 import Layout from '../components/Layout';
-import ProductList from '../components/ProductList';
 
-// import { getProducts } from '../lib/moltin'
+import { getCollection } from '../lib/jenim';
+import CollectionList from '../components/CollectionList';
 
-import { getProducts } from '../lib/jenim';
-
-const Home = ({ products }) => (
-	<Layout title="Home">
-		<ProductList products={products} />
+const Home = ({ collections }) => (
+	<Layout title="JENIMSPORTS.COM">
+		<CollectionList collections={collections} />
 	</Layout>
 );
 
 Home.getInitialProps = async () => {
-	const data = await getProducts();
-	const products = data.map((product) => {
+	const data = await getCollection();
+	const collections = data.map((collection) => {
 		return {
-			...product,
-			image: '/static/images/'+product.group +'/'+product.color_name+'/'+ product.size +'.jpg'
+			...collection
 		};
 	});
 
 	return {
-		products
+		collections
 	};
 };
 
