@@ -3,7 +3,7 @@ import GroupList from '../components/GroupList';
 
 // import { getProducts } from '../lib/moltin'
 
-import { getGroups } from '../lib/jenim';
+import { getGroups } from '../data/jenim';
 
 const Home = ({ groups }) => (
 	<Layout title="Home">

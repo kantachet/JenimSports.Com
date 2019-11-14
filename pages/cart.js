@@ -7,7 +7,7 @@ import {
   removeFromCart,
   checkoutCart,
   payForOrder
-} from '../lib/moltin'
+} from '../data/jenim'
 
 export default class Cart extends React.Component {
   state = {

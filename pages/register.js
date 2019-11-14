@@ -3,7 +3,7 @@ import { Header, Form, Input, Button, Segment } from 'semantic-ui-react'
 
 import Layout from '../components/Layout'
 
-import { register } from '../lib/moltin'
+import { register } from '../data/jenim'
 
 export default class Register extends React.Component {
   state = {
@@ -76,7 +76,7 @@ export default class Register extends React.Component {
               />
             </Form.Field>
 
-            <Button type="submit" color="orange">
+            <Button type="submit" color="black">
               Register
             </Button>
           </Segment>

@@ -10,7 +10,7 @@ import {
 
 import Layout from '../components/Layout'
 
-import { login } from '../lib/moltin'
+import { login } from '../data/jenim'
 
 export default class Login extends React.Component {
   state = {
@@ -82,7 +82,7 @@ export default class Login extends React.Component {
               />
             </Form.Field>
 
-            <Button type="submit" color="orange">
+            <Button type="submit" color="black">
               Login
             </Button>
           </Segment>

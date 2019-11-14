@@ -4,6 +4,7 @@ localStorage
 
 # production
 .next
+out
 
 # misc
 .env

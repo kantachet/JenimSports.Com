@@ -5,10 +5,10 @@ const mapCollectionsToItems = (collections) =>
 	collections.map(({ title, image,href }) => {
 		return {
 			image:image,
-			header: title,
+			header : title,
 			fluid: true,
 			href:href
 		};
 	});
 
-export default ({ collections }) => <Card.Group items={mapCollectionsToItems(collections)} itemsPerRow="1" stackable />;
+export default ({ collections }) => <Card.Group items={mapCollectionsToItems(collections)} itemsPerRow="1" stackable  />;

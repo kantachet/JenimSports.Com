@@ -2,10 +2,10 @@ import { Item, Label } from 'semantic-ui-react';
 
 import AddToCart from './AddToCart';
 
-export default ({ id, name, detail, desc, cny, usd, thb, products }) => (
+export default ({ id, name, slug,detail, desc, cny, usd, thb, products }) => (
 	<Item.Group>
 		<Item>
-			<Item.Image size="large" src={'/static/images/products/' + name + '/cover.jpg'} />
+			<Item.Image size="large" src={'/images/products/' + slug + '/cover.jpg'} />
 			<Item.Content>
 				<Item.Header>{name}</Item.Header>
 				<Item.Description>

@@ -37,14 +37,14 @@ export default class Layout extends React.Component {
           <meta charSet="utf-8" />
           <link
             rel="stylesheet"
-            href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
+            href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
           />
           <title>{title}</title>
         </Head>
 
         <Header token={token} />
 
-        <Container text style={{ paddingTop: '7em' }}>
+        <Container style={{ paddingTop: '7em'}}>
           {children}
         </Container>
       </React.Fragment>

@@ -28,16 +28,20 @@ export default ({ token }) => (
 			<meta name="msapplication-TileColor" content="#ffffff" />
 			<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
 			<meta name="theme-color" content="#ffffff" />
-			<link rel="stylesheet" type="text/css" href="/static/nprogress.css" />
+			<link rel="stylesheet" type="text/css" href="/nprogress.css" />
 		</Head>
-		<Menu inverted fixed="top" size="huge">
-			<Container text>
-				<Link href="/" prefetch passHref>
-					<Menu.Item as="a" header>
-						<Image size="mini" src="/static/logo_land.png" style={{ marginRight: '1.5em' }} />
+		<Menu fixed="top" size="tiny" borderless>
+			<Container>
+			<Link href="/" passHref>
+					<Menu.Item position="left" name="X">
+					<Image src="/logo_black.png" />
 					</Menu.Item>
 				</Link>
-
+				<Link href="/" prefetch passHref>
+					<Menu.Item as="a" header>
+					<Image src="/logo_land.png" />
+					</Menu.Item>
+				</Link>
 				{token ? (
 					<Link href="/myaccount" passHref>
 						<Menu.Item>MY ACCOUNT</Menu.Item>
@@ -48,15 +52,14 @@ export default ({ token }) => (
 						//   <Menu.Item>REGISTER</Menu.Item>
 						// </Link>,
 
-						<Link href="/login" passHref prefetch key="login">
-							<Menu.Item>LOGIN</Menu.Item>
-						</Link>
+						// <Link href="/login" passHref prefetch key="login">
+						// 	<Menu.Item>LOGIN</Menu.Item>
+						// </Link>
 					]
 				)}
-
 				<Link href="/cart" passHref>
 					<Menu.Item position="right" name="cart">
-						<Icon name="cart" />
+						<Icon name="cart plus" size="big" />
 					</Menu.Item>
 				</Link>
 			</Container>

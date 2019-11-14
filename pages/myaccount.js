@@ -3,7 +3,7 @@ import Router from 'next/router'
 import Layout from '../components/Layout'
 import OrderItemList from '../components/OrderItemList'
 
-import { getOrders } from '../lib/moltin'
+import { getOrders } from '../data/jenim'
 
 export default class MyAccount extends React.Component {
   state = {

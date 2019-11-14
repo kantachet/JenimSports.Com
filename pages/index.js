@@ -1,6 +1,6 @@
 import Layout from '../components/Layout';
 
-import { getCollection } from '../lib/jenim';
+import { getCollection } from '../data/jenim';
 import CollectionList from '../components/CollectionList';
 
 const Home = ({ collections }) => (

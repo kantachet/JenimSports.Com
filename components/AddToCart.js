@@ -1,6 +1,6 @@
 import { Input, Button, Label } from 'semantic-ui-react'
 
-import { addToCart } from '../lib/moltin'
+import { addToCart } from '../data/jenim'
 
 export default class AddToCart extends React.Component {
   state = {

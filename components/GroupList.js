@@ -2,14 +2,14 @@ import Link from 'next/link';
 import { Card, Image } from 'semantic-ui-react';
 
 const mapGroupsToItems = (groups) =>
-	groups.map(({ id, name, cny, usd, thb, image }) => {
+	groups.map(({ id, slug, cny, usd, thb}) => {
 		return {
 			childKey: id,
-			image: '/static/images/products/' + name + '/cover.jpg',
-			header: name,
+			image: '/images/products/' + slug + '/cover.jpg',
+			header: slug,
 			meta: thb + ' , ~' + usd + '  , ~' + cny,
 			fluid: true,
-			href: `/group?name=${name}`
+			href: `/group?name=${slug}`
 		};
 	});
 
